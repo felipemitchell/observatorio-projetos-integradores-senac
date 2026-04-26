@@ -72,7 +72,7 @@ We must follow data protection laws (LGPD).
 Each group must add a creative differential to the system.
 
 
-Nosso Time: 
+### Nosso Time: 
 
 Felipe Mitchell Campos
 
