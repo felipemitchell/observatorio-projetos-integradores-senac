@@ -30,7 +30,8 @@ Ainda podemos mudar, mas o plano é:
 - Cada grupo precisa inventar **um diferencial criativo** no sistema.
 
 ### English
-What's the idea?
+### What's the idea?
+
 A web system to organize integrative projects. No more lost emails, wrong versions, or messy files. Everything in one place.
 
 ### What do we want?
