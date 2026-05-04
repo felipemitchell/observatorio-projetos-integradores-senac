@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senac — Observatório de Projetos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     PÁGINA: LOGIN
+     ============================================================ -->
+<div id="page-login" class="page">
+  <div class="login-card">
+
+    <div class="login-brand">
+      <div class="brand-icon">S</div>
+      <div class="brand-text">
+        <h1>Senac</h1>
+        <p>Observatório de Projetos</p>
+      </div>
+    </div>
+
+    <form id="form-login">
+      <div id="login-erro" class="error-msg">E-mail ou senha incorretos. Tente novamente.</div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seu.email@senac.br" required>
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="••••••••" required>
+      </div>
+
+      <button type="submit" class="btn-login">Entrar</button>
+    </form>
+
+    <p class="signup-link">Não possui uma conta? <a href="#">Criar conta</a></p>
+
+    <div class="credentials-box">
+      <div class="credentials-title">Credenciais de teste:</div>
+      <p>
+        <strong>Aluno:</strong> aluno@senac.br / aluno123<br>
+        <strong>Professor:</strong> professor@senac.br / prof123<br>
+        <strong>Admin:</strong> admin@senac.br / admin123
+      </p>
+    </div>
+
+    <p class="login-footer">Senac Fecomércio © 2026</p>
+  </div>
+</div>
+
+
+<!-- ============================================================
+     PÁGINA: DASHBOARD ALUNO
+     ============================================================ -->
+<div id="page-aluno" class="page">
+  <div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-icon">S</div>
+        <div class="brand-text"><h2>Senac</h2><span>Observatório</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="nav-item active">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          Dashboard
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Meus Projetos
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Submeter Projeto
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Meu Perfil
+        </a>
+      </nav>
+      <div class="sidebar-logout">
+        <button class="logout-btn">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Sair
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+      <header class="topbar">
+        <div class="notif-btn">
+          <svg width="18" height="18" fill="none" stroke="#6B7280" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="notif-badge">2</span>
+        </div>
+        <div class="user-info">
+          <div class="user-meta">
+            <strong class="topbar-nome"></strong>
+            <span class="topbar-role"></span>
+          </div>
+          <div class="topbar-avatar avatar navy"></div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <h1>Dashboard</h1>
+          <p>Bem-vindo de volta, João!</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon blue">
+              <svg width="22" height="22" fill="none" stroke="#1B2B5E" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="stat-label">Total de Projetos</div>
+            <div class="stat-value">3</div>
+            <div class="stat-sub">+1 este mês</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon green">
+              <svg width="22" height="22" fill="none" stroke="#2E9E6B" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="stat-label">Projetos Aprovados</div>
+            <div class="stat-value">1</div>
+            <div class="stat-sub">33% aprovação</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon yellow">
+              <svg width="22" height="22" fill="none" stroke="#D4891A" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-label">Em Avaliação</div>
+            <div class="stat-value">1</div>
+            <div class="stat-sub">Aguardando</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon gray">
+              <svg width="22" height="22" fill="none" stroke="#6B7280" stroke-width="2" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <div class="stat-label">Pendentes</div>
+            <div class="stat-value">1</div>
+            <div class="stat-sub">Revisar</div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">
+            <span class="section-title">Projetos Recentes</span>
+            <button class="btn-ver-todos">Ver Todos</button>
+          </div>
+          <div class="project-row">
+            <div class="project-info">
+              <h3>App de Delivery Sustentável <span class="badge avaliacao">Em Avaliação</span></h3>
+              <p>ADS 4º Semestre &nbsp;•&nbsp; Submetido em 10/04/2026</p>
+            </div>
+            <button class="btn-action">Ver Detalhes</button>
+          </div>
+          <div class="project-row">
+            <div class="project-info">
+              <h3>Sistema de Gestão Escolar <span class="badge aprovado">Aprovado</span></h3>
+              <p>ADS 4º Semestre &nbsp;•&nbsp; Submetido em 15/03/2026 &nbsp;•&nbsp; <span class="nota-label">Nota: 9.2</span></p>
+            </div>
+            <button class="btn-action">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="cta-grid">
+          <div class="cta-card dark">
+            <h3>Submeter Novo Projeto</h3>
+            <p>Envie seu projeto integrador para avaliação</p>
+            <button class="cta-btn">Começar Agora</button>
+          </div>
+          <div class="cta-card orange">
+            <h3>Meus Projetos</h3>
+            <p>Acompanhe o status de todos os seus projetos</p>
+            <button class="cta-btn">Ver Projetos</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ============================================================
+     PÁGINA: DASHBOARD PROFESSOR
+     ============================================================ -->
+<div id="page-professor" class="page">
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-icon">S</div>
+        <div class="brand-text"><h2>Senac</h2><span>Observatório</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="nav-item active">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          Dashboard
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Projetos
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          Avaliações
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Meu Perfil
+        </a>
+      </nav>
+      <div class="sidebar-logout">
+        <button class="logout-btn">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Sair
+        </button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="notif-btn">
+          <svg width="18" height="18" fill="none" stroke="#6B7280" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="notif-badge">3</span>
+        </div>
+        <div class="user-info">
+          <div class="user-meta">
+            <strong class="topbar-nome"></strong>
+            <span class="topbar-role"></span>
+          </div>
+          <div class="topbar-avatar avatar mid"></div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <h1>Dashboard</h1>
+          <p>Bem-vindo de volta, Prof. Silva!</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon blue">
+              <svg width="22" height="22" fill="none" stroke="#1B2B5E" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="stat-label">Total de Projetos</div>
+            <div class="stat-value">24</div>
+            <div class="stat-sub">para avaliar</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon green">
+              <svg width="22" height="22" fill="none" stroke="#2E9E6B" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="stat-label">Projetos Avaliados</div>
+            <div class="stat-value">18</div>
+            <div class="stat-sub">75% completo</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon yellow">
+              <svg width="22" height="22" fill="none" stroke="#D4891A" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-label">Pendentes</div>
+            <div class="stat-value">6</div>
+            <div class="stat-sub">aguardando</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon orange">
+              <svg width="22" height="22" fill="none" stroke="#F47B20" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-label">Média Geral</div>
+            <div class="stat-value">8.5</div>
+            <div class="stat-sub">dos aprovados</div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">
+            <span class="section-title">Projetos Recentes</span>
+            <button class="btn-ver-todos">Ver Todos</button>
+          </div>
+          <div class="project-row">
+            <div class="project-info">
+              <h3>Sistema de Controle de Estoque <span class="badge pendente">Pendente</span></h3>
+              <p>Grupo D – Bruno, Camila, Diego &nbsp;•&nbsp; ADS 3º Semestre</p>
+            </div>
+            <button class="btn-action primary">Avaliar</button>
+          </div>
+          <div class="project-row">
+            <div class="project-info">
+              <h3>App de Delivery Sustentável <span class="badge pendente">Pendente</span></h3>
+              <p>Grupo B – Ana, Carlos, Lucas &nbsp;•&nbsp; ADS 4º Semestre</p>
+            </div>
+            <button class="btn-action primary">Avaliar</button>
+          </div>
+          <div class="project-row">
+            <div class="project-info">
+              <h3>Sistema de Gestão Escolar <span class="badge avaliado">Avaliado</span></h3>
+              <p>Grupo A – João, Maria, Pedro &nbsp;•&nbsp; ADS 4º Semestre &nbsp;•&nbsp; <span class="nota-label">Nota: 9.2</span></p>
+            </div>
+            <button class="btn-action">Ver Avaliação</button>
+          </div>
+        </div>
+
+        <div class="cta-grid">
+          <div class="cta-card dark">
+            <h3>Avaliar Projetos</h3>
+            <p>6 projetos aguardando sua avaliação</p>
+            <button class="cta-btn">Começar Avaliações</button>
+          </div>
+          <div class="cta-card orange">
+            <h3>Todos os Projetos</h3>
+            <p>Visualize todos os projetos submetidos</p>
+            <button class="cta-btn">Ver Projetos</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ============================================================
+     PÁGINA: DASHBOARD ADMIN
+     ============================================================ -->
+<div id="page-admin" class="page">
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-icon">S</div>
+        <div class="brand-text"><h2>Senac</h2><span>Observatório</span></div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="nav-item active">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          Dashboard
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Projetos
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+          Administração
+        </a>
+        <a class="nav-item">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Meu Perfil
+        </a>
+      </nav>
+      <div class="sidebar-logout">
+        <button class="logout-btn">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          Sair
+        </button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar space-between">
+        <div></div>
+        <div class="topbar-right">
+          <button class="btn-relatorio">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Gerar Relatório
+          </button>
+          <div class="notif-btn">
+            <svg width="18" height="18" fill="none" stroke="#6B7280" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span class="notif-badge">5</span>
+          </div>
+          <div class="user-info">
+            <div class="user-meta">
+              <strong class="topbar-nome"></strong>
+              <span class="topbar-role"></span>
+            </div>
+            <div class="topbar-avatar avatar orange"></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <h1>Dashboard Administrativo</h1>
+          <p>Visão geral do Observatório de Projetos</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon blue">
+              <svg width="22" height="22" fill="none" stroke="#1B2B5E" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div class="stat-label">Total de Projetos</div>
+            <div class="stat-value">48</div>
+            <div class="stat-sub">+12 este mês</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon green">
+              <svg width="22" height="22" fill="none" stroke="#2E9E6B" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="stat-label">Projetos Avaliados</div>
+            <div class="stat-value">32</div>
+            <div class="stat-sub">67% completo</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon yellow">
+              <svg width="22" height="22" fill="none" stroke="#D4891A" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="stat-label">Alunos Cadastrados</div>
+            <div class="stat-value">156</div>
+            <div class="stat-sub">+8 este semestre</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon orange">
+              <svg width="22" height="22" fill="none" stroke="#F47B20" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div class="stat-label">Professores</div>
+            <div class="stat-value">12</div>
+            <div class="stat-sub">3 turmas/prof</div>
+          </div>
+        </div>
+
+        <div class="charts-grid">
+          <div class="chart-card">
+            <div class="chart-title">Projetos por Turma</div>
+            <div class="chart-wrap">
+              <canvas id="barChart"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <div class="chart-title">Status dos Projetos</div>
+            <div class="chart-wrap" style="height:160px;">
+              <canvas id="pieChart"></canvas>
+            </div>
+            <div class="pie-legend">
+              <div class="legend-item">
+                <div class="legend-dot green"></div>
+                <span>Avaliados: <strong>32</strong></span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot orange"></div>
+                <span>Pendentes: <strong>16</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-label">Média Geral de Notas</div>
+            <div class="metric-value">8.7</div>
+            <div class="metric-sub">Dos projetos avaliados</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Taxa de Aprovação</div>
+            <div class="metric-value green">94%</div>
+            <div class="metric-sub">Projetos com nota ≥ 6.0</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-label">Projetos no Prazo</div>
+            <div class="metric-value orange">89%</div>
+            <div class="metric-sub">Submetidos dentro do prazo</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="app.js"></script>
+<script>
+  /* Gráficos do admin — inicializados uma única vez */
+  let chartsInicializados = false;
+
+  function inicializarGraficos() {
+    if (chartsInicializados) return;
+    chartsInicializados = true;
+
+    new Chart(document.getElementById('barChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['ADS 1º', 'ADS 2º', 'ADS 3º', 'ADS 4º'],
+        datasets: [{
+          label: 'Projetos',
+          data: [8, 10, 12, 18],
+          backgroundColor: '#1B2B5E',
+          borderRadius: 6,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: true, position: 'bottom',
+            labels: { font: { family: 'Plus Jakarta Sans', size: 12 }, color: '#6B7280', boxWidth: 14, padding: 16 }
+          }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { font: { family: 'Plus Jakarta Sans', size: 11 }, color: '#6B7280' } },
+          y: { grid: { color: '#F0F0F0' }, ticks: { font: { family: 'Plus Jakarta Sans', size: 11 }, color: '#6B7280', stepSize: 5 }, beginAtZero: true, max: 20 }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('pieChart').getContext('2d'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Avaliados', 'Pendentes'],
+        datasets: [{
+          data: [32, 16],
+          backgroundColor: ['#2E9E6B', '#F47B20'],
+          borderWidth: 0,
+          hoverOffset: 4
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '65%',
+        plugins: { legend: { display: false } }
+      }
+    });
+  }
+
+  /* Intercepta o mostrarPagina original para inicializar charts quando admin abre */
+  const _mostrarPaginaOriginal = mostrarPagina;
+  window.mostrarPagina = function(id) {
+    _mostrarPaginaOriginal(id);
+    if (id === 'page-admin') {
+      setTimeout(inicializarGraficos, 50);
+    }
+  };
+</script>
+
+</body>
+</html>
